@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengajuan Servis - URT</title>
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <header>
+    <nav>
+      <h3>Menu Pelanggan</h3>
+      <p><strong>Nino Rachimas</strong></p>
+      
+      <ul>
+        <li><a href="beranda-pelanggan.html">Beranda</a></li>
+        <li><a href="riwayat-servis.html">Riwayat Servis</a></li>
+        <li><a href="profil-pelanggan.html">Profil</a></li>
+        <li>Ajukan Servis Terbaru (Aktif)</li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+  <main>
+    <section id="service-order-popup">
+      <p>Pengajuan Servis</p>
+      <h1>Isi Form servis</h1>
+      <p>Lengkapi data agar teknisi dapat memeriksa perangkatmu.</p>
+
+      <!-- Form diarahkan ke riwayat-servis.html setelah di-submit -->
+      <form action="riwayat-servis.html" method="GET">
+        
+        <fieldset>
+          <legend>Data Pemilik</legend>
+          <p>
+            <label>Nama Lengkap:<br>
+              <input type="text" name="nama" value="Sofia Malvalena Adam" required>
+            </label>
+          </p>
+          <p>
+            <label>Email:<br>
+              <input type="email" name="email" value="sofia.m@example.com" required>
+            </label>
+          </p>
+          <p>
+            <label>Nomor HP:<br>
+              <input type="tel" name="nohp" value="081234567890" required>
+            </label>
+          </p>
+          <p>
+            <label>Alamat:<br>
+              <textarea name="alamat" rows="3" cols="50" required>Depok, Jawa Barat</textarea>
+            </label>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Data Perangkat</legend>
+          <p>
+            <label>Jenis Perangkat:<br>
+              <select name="jenis_perangkat" required>
+                <option value="">-- Pilih Jenis --</option>
+                <option value="laptop">Laptop / Notebook</option>
+                <option value="pc">PC / Komputer Desktop</option>
+                <option value="macbook">MacBook</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>Merek/Model:<br>
+              <input type="text" name="model" placeholder="Contoh: ASUS ROG Zephyrus G14" required>
+            </label>
+          </p>
+          <p>
+            <label>Keluhan/Kerusakan:<br>
+              <textarea name="keluhan" rows="5" cols="50" placeholder="Jelaskan secara detail masalah pada perangkat Anda..." required></textarea>
+            </label>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <p>
+          <a href="beranda-pelanggan.html">Batal</a>
+          <button type="submit">Ajukan Servis</button>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

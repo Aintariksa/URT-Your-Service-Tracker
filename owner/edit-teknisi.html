@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah / Edit Teknisi — Portal Pemilik — Your Service Tracker</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        PEMILIK USAHA &bull; &#9679; Sistem Online &nbsp;&nbsp;&nbsp; &#128276;
+        &nbsp; AR
+      </p>
+    </header>
+
+    <hr>
+
+    <nav>
+      <ul>
+        <li><a href="beranda-owner.html">Beranda</a></li>
+        <li><a href="tiket-servis.html">Tiket Servis</a></li>
+        <li>
+          <strong><a href="teknisi.html">Teknisi</a></strong>
+        </li>
+        <li><a href="pelanggan.html">Pelanggan</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="langganan.html">Langganan</a></li>
+        <li><a href="pengaturan.html">Pengaturan</a></li>
+        <li><a href="profil-owner.html">Profil</a></li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+      <hr>
+      <p>Andi Ramadhan<br>Pemilik &bull; ServisKita</p>
+    </nav>
+
+    <hr>
+
+    <main>
+      <p>PORTAL PEMILIK</p>
+      <h1>Tambah / Edit Teknisi</h1>
+      <p>
+        Form identitas, spesialisasi, dan akses teknisi. Data terisi untuk
+        mengedit Sofia Malvalena Adam.
+      </p>
+      <p><a href="teknisi.html">&larr; Kembali ke Teknisi</a></p>
+
+      <p>
+        <a href="edit-teknisi.html">[Tambah Baru]</a> &nbsp;
+        <strong>[Edit Teknisi]</strong> &nbsp;
+        <em
+          >Mode edit aktif &bull; Tambah Baru menggunakan form yang sama dengan
+          data kosong.</em
+        >
+      </p>
+
+      <form action="teknisi.html" method="get">
+        <fieldset>
+          <legend>Identitas &amp; Kontak</legend>
+
+          <p>
+            <label for="nama_lengkap">Nama Lengkap *</label><br>
+            <input
+              type="text"
+              id="nama_lengkap"
+              name="nama_lengkap"
+              value="Sofia Malvalena Adam"
+              required>
+          </p>
+
+          <p>
+            <label for="nama_pengguna">Nama Pengguna *</label><br>
+            <input
+              type="text"
+              id="nama_pengguna"
+              name="nama_pengguna"
+              value="sofia.adam"
+              required>
+          </p>
+
+          <p>
+            <label for="surel">Surel *</label><br>
+            <input
+              type="email"
+              id="surel"
+              name="surel"
+              value="sofia.adam@yourservicetracker.id"
+              required>
+          </p>
+
+          <p>
+            <label for="nomor_hp">Nomor HP *</label><br>
+            <input
+              type="tel"
+              id="nomor_hp"
+              name="nomor_hp"
+              value="0812 3456 7890"
+              required>
+          </p>
+
+          <p>
+            <label for="alamat">Alamat</label><br>
+            <textarea id="alamat" name="alamat" rows="3" cols="40">
+Jl. Raya Kebon Jeruk No. 18, Jakarta Barat, DKI Jakarta 11530</textarea
+            >
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detail Kerja &amp; Akses</legend>
+
+          <p>
+            <label for="jabatan">Jabatan *</label><br>
+            <select id="jabatan" name="jabatan" required>
+              <option value="" disabled>Pilih jabatan</option>
+              <option value="Teknisi Servis Laptop" selected>
+                Teknisi Servis Laptop
+              </option>
+              <option value="Teknisi Hardware">Teknisi Hardware</option>
+              <option value="Teknisi Software">Teknisi Software</option>
+              <option value="Quality Control">Quality Control</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="departemen">Departemen</label><br>
+            <select id="departemen" name="departemen">
+              <option selected>Operasional Servis</option>
+              <option>Quality Assurance</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="spesialisasi">Spesialisasi *</label><br>
+            <input
+              type="text"
+              id="spesialisasi"
+              name="spesialisasi"
+              value="Laptop &bull; Hardware &bull; Diagnosis"
+              required>
+          </p>
+
+          <p>
+            <label for="status_akses">Status Akses</label><br>
+            <select id="status_akses" name="status_akses">
+              <option selected>Aktif</option>
+              <option>Nonaktif</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="kapasitas">Kapasitas Tiket Aktif</label><br>
+            <input
+              type="number"
+              id="kapasitas"
+              name="kapasitas"
+              value="5"
+              min="1"
+              max="20">
+          </p>
+
+          <p>
+            <label for="kata_sandi_baru">Kata Sandi Baru</label><br>
+            <input
+              type="password"
+              id="kata_sandi_baru"
+              name="kata_sandi_baru"
+              placeholder="Tidak diubah">
+            <br><small
+              >Saat menambah akun, tautan aktivasi dikirim melalui email.</small
+            >
+          </p>
+        </fieldset>
+
+        <p>
+          <label>
+            <input type="checkbox" name="akses_portal" value="ya" checked>
+            Izinkan akses portal teknisi — Teknisi dapat mengelola diagnosis,
+            estimasi, pengerjaan, dan QC pada tiket yang ditugaskan.
+          </label>
+        </p>
+
+        <p>
+          <a href="teknisi.html">Batal</a>
+          &nbsp;
+          <button type="reset">Reset Form</button>
+          &nbsp;
+          <button type="submit">Simpan Teknisi</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

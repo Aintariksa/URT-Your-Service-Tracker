@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk — URT Your Device Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>URT — Your Device Tracker</h1>
+      <nav aria-label="Navigasi halaman">
+        <a href="index.html">Kembali ke Beranda</a>
+        <a href="registrasi.html">Belum Memiliki Akun? Registrasi</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="judul-masuk">
+        <h2 id="judul-masuk">Masuk ke Portal</h2>
+        <form>
+          <p>
+            <label for="email">Email</label><br>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="email@contoh.com"
+              required>
+          </p>
+
+          <p>
+            <label for="password">Password</label><br>
+            <input name="password" id="password" type="password" required>
+          </p>
+
+          <fieldset>
+            <legend>Pilih Portal</legend>
+            <button type="submit" formaction="pelanggan/beranda-pelanggan.html">
+              Masuk sebagai Pelanggan
+            </button>
+            <button type="submit" formaction="teknisi/beranda-teknisi.html">
+              Masuk sebagai Teknisi
+            </button>
+            <button type="submit" formaction="owner/beranda-owner.html">
+              Masuk sebagai Owner
+            </button>
+          </fieldset>
+        </form>
+
+        <p><a href="index.html">Batal</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>URT — Your Device Tracker | Kelompok 2 UT</p>
+    </footer>
+  </body>
+</html>

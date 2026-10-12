@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan — Portal Pemilik — Your Service Tracker</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        PEMILIK USAHA &bull; &#9679; Sistem Online &nbsp;&nbsp;&nbsp; &#128276;
+        &nbsp; AR
+      </p>
+    </header>
+
+    <hr>
+
+    <nav>
+      <ul>
+        <li><a href="beranda-owner.html">Beranda</a></li>
+        <li><a href="tiket-servis.html">Tiket Servis</a></li>
+        <li><a href="teknisi.html">Teknisi</a></li>
+        <li><a href="pelanggan.html">Pelanggan</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="langganan.html">Langganan</a></li>
+        <li>
+          <strong><a href="pengaturan.html">Pengaturan</a></strong>
+        </li>
+        <li><a href="profil-owner.html">Profil</a></li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+      <hr>
+      <p>Andi Ramadhan<br>Pemilik &bull; ServisKita</p>
+    </nav>
+
+    <hr>
+
+    <main>
+      <p>PORTAL PEMILIK</p>
+      <h1>Pengaturan</h1>
+      <p>
+        Kelola informasi usaha, akun pemilik, dan preferensi operasional
+        ServisKita.
+      </p>
+
+      <form action="pengaturan.html" method="get">
+        <fieldset>
+          <legend>Informasi Usaha</legend>
+          <p><em>Ditampilkan pada portal pelanggan dan tanda terima</em></p>
+
+          <p>
+            <label for="nama_usaha">Nama Usaha</label><br>
+            <input
+              type="text"
+              id="nama_usaha"
+              name="nama_usaha"
+              value="ServisKita">
+          </p>
+
+          <p>
+            <label for="email_usaha">Email Usaha</label><br>
+            <input
+              type="email"
+              id="email_usaha"
+              name="email_usaha"
+              value="admin@serviskita.id">
+          </p>
+
+          <p>
+            <label for="wa_usaha">Nomor WhatsApp Usaha</label><br>
+            <input
+              type="tel"
+              id="wa_usaha"
+              name="wa_usaha"
+              value="0812 3456 7890">
+          </p>
+
+          <p>
+            <label for="alamat_usaha">Alamat Usaha</label><br>
+            <textarea id="alamat_usaha" name="alamat_usaha" rows="3" cols="50">
+Jl. Raya Kebon Jeruk No. 18, Jakarta Barat, DKI Jakarta 11530</textarea
+            >
+          </p>
+
+          <p>
+            <label for="jam_operasional">Jam Operasional</label><br>
+            <input
+              type="text"
+              id="jam_operasional"
+              name="jam_operasional"
+              value="Senin–Sabtu, 09.00–18.00 WIB">
+          </p>
+
+          <p>
+            <label for="tautan_portal">Tautan Portal Pelanggan</label><br>
+            <input
+              type="text"
+              id="tautan_portal"
+              name="tautan_portal"
+              value="urt.id/serviskita">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Akun Pemilik</legend>
+
+          <p>
+            <label for="nama_pemilik">Nama Lengkap</label><br>
+            <input
+              type="text"
+              id="nama_pemilik"
+              name="nama_pemilik"
+              value="Andi Ramadhan"
+              readonly>
+          </p>
+
+          <p>
+            <label for="email_akun">Email Akun</label><br>
+            <input
+              type="email"
+              id="email_akun"
+              name="email_akun"
+              value="andi@serviskita.id"
+              readonly>
+          </p>
+
+          <p>
+            <label for="peran">Peran</label><br>
+            <input
+              type="text"
+              id="peran"
+              name="peran"
+              value="Pemilik Usaha"
+              readonly>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferensi Sistem</legend>
+          <p><em>Pemberitahuan dan pengaturan tampilan</em></p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="notif_wa" value="ya" checked>
+              <strong>Notifikasi WhatsApp pelanggan</strong> — Kirim pembaruan
+              saat status tiket berubah.
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="notif_email" value="ya" checked>
+              <strong>Notifikasi email estimasi &amp; invoice</strong> — Salinan
+              estimasi dan tagihan digital.
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input
+                type="checkbox"
+                name="wajib_persetujuan"
+                value="ya"
+                checked>
+              <strong>Persetujuan biaya sebelum perbaikan</strong> — Wajib untuk
+              seluruh tiket servis.
+            </label>
+          </p>
+
+          <p>
+            <label for="bahasa">Bahasa / Zona Waktu</label><br>
+            <input
+              type="text"
+              id="bahasa"
+              name="bahasa"
+              value="Bahasa Indonesia • Asia/Jakarta (WIB)"
+              readonly>
+          </p>
+        </fieldset>
+
+        <p>
+          &#10003;
+          <em
+            >Pengaturan tersimpan — Informasi usaha dan preferensi operasional
+            berhasil diperbarui. Perubahan berlaku untuk seluruh akun
+            ServisKita.</em
+          >
+        </p>
+
+        <p>
+          <button type="reset">Reset Perubahan</button>
+          &nbsp;
+          <button type="submit">Simpan Pengaturan</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

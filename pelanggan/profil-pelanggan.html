@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Pelanggan - URT Device Tracker</title>
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <header>
+    <nav>
+      <h3>Menu Pelanggan</h3>
+      <p><strong>Nino Rachimas</strong></p>
+      
+      <ul>
+        <li><a href="beranda-pelanggan.html">Beranda</a></li>
+        <li><a href="riwayat-servis.html">Riwayat Servis</a></li>
+        <li>Profil (Aktif)</li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- KONTEN UTAMA PROFIL -->
+  <main>
+    <h1>Profil Pelanggan</h1>
+    <p>Kelola identitas dan kontak untuk pembaruan status servis perangkat Anda.</p>
+
+    <h2>Nino Rachimas</h2>
+    <p>Informasi profil dan preferensi komunikasi</p>
+
+    <form action="beranda-pelanggan.html" method="GET">
+      <!-- INFORMASI PRIBADI -->
+      <fieldset>
+        <legend>Informasi Pribadi</legend>
+        <p>
+          <label>Nama Lengkap:<br> 
+            <input type="text" name="nama" value="Nino Rachimas" required>
+          </label>
+        </p>
+        <p>
+          <label>Nama pelaberanda-pelanggan.html:<br> 
+            <input type="text" name="username" value="ninorachimas" required>
+          </label>
+        </p>
+        <p>
+          <label>Email Aktif:<br> 
+            <input type="email" name="email" value="nino@vinix7ut.com" required>
+          </label>
+        </p>
+        <p>
+          <label>Nomor WhatsApp/Telepon:<br> 
+            <input type="tel" name="telepon" value="081234567890" required>
+          </label>
+        </p>
+        <p>
+          <label>Alamat Lengkap:<br> 
+            <textarea name="alamat" rows="4" cols="50" required>Kota Semarang, Jawa Barat</textarea>
+          </label>
+        </p>
+      </fieldset>
+
+      <br>
+
+      <!-- PREFERENSI & KEAMANAN -->
+      <fieldset>
+        <legend>Preferensi & Keamanan</legend>
+        <p>
+          <label>
+            <input type="checkbox" name="notif_wa" checked> 
+            Notifikasi melalui WhatsApp: Estimasi biaya, status pengerjaan, dan pengambilan
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="notif_email" checked> 
+            Salinan tanda terima melalui email: Tanda terima dan ringkasan servis digital.
+          </label>
+        </p>
+        
+        <hr>
+        
+        <p>
+          <label>Kata Sandi Baru:<br> 
+            <input type="password" name="password_baru">
+          </label>
+        </p>
+        <p><em>Opsional. Kosongkan jika tidak ingin mengganti kata sandi.</em></p>
+        
+        <p>
+          <label>Konfirmasi Kata Sandi Baru:<br> 
+            <input type="password" name="konfirmasi_password">
+          </label>
+        </p>
+      </fieldset>
+
+      <br>
+
+      <!-- INFORMASI PENTING & TOMBOL AKSI -->
+      <p><strong>Data kontak digunakan untuk servis</strong></p>
+      <p>Pastikan nomor dan email aktif agar Anda menerima permintaan persetujuan biaya dan pembaruan perbaikan.</p>
+
+      <p>
+        <a href="beranda-pelanggan.html">Batal</a>
+        <button type="submit">Simpan Profil</button>
+      </p>
+
+    </form>
+  </main>
+
+  <br><hr>
+  <footer>
+    <p>URT — Your Device Tracker | Kelompok 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan — Portal Pemilik — Your Service Tracker</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        PEMILIK USAHA &bull; &#9679; Sistem Online &nbsp;&nbsp;&nbsp; &#128276;
+        &nbsp; AR
+      </p>
+    </header>
+
+    <hr>
+
+    <nav>
+      <ul>
+        <li><a href="beranda-owner.html">Beranda</a></li>
+        <li><a href="tiket-servis.html">Tiket Servis</a></li>
+        <li><a href="teknisi.html">Teknisi</a></li>
+        <li><a href="pelanggan.html">Pelanggan</a></li>
+        <li>
+          <strong><a href="layanan.html">Layanan</a></strong>
+        </li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="langganan.html">Langganan</a></li>
+        <li><a href="pengaturan.html">Pengaturan</a></li>
+        <li><a href="profil-owner.html">Profil</a></li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+      <hr>
+      <p>Andi Ramadhan<br>Pemilik &bull; ServisKita</p>
+    </nav>
+
+    <hr>
+
+    <main>
+      <p>PORTAL PEMILIK</p>
+      <h1>Layanan</h1>
+      <p>
+        Atur katalog layanan, harga dasar, estimasi pengerjaan, dan
+        ketersediaan. &nbsp;&nbsp;
+        <a href="edit-layanan.html">+ Tambah Layanan</a>
+      </p>
+
+      <section>
+        <h2>Ringkasan Katalog</h2>
+
+        <table>
+          <tr>
+            <th>Layanan aktif</th>
+            <th>Kategori layanan</th>
+            <th>Persetujuan biaya</th>
+          </tr>
+          <tr>
+            <td>
+              <strong>6</strong><br><small
+                >Tersedia untuk registrasi servis</small
+              >
+            </td>
+            <td>
+              <strong>4</strong><br><small
+                >Laptop, software, hardware, penyimpanan</small
+              >
+            </td>
+            <td>
+              <strong>Wajib</strong><br><small
+                >Sebelum pekerjaan dimulai</small
+              >
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Katalog Layanan</h2>
+        <p>Harga dasar &bull; Biaya final dikonfirmasi setelah diagnosis</p>
+
+        <form method="get" action="layanan.html">
+          <label for="cari_layanan">Cari:</label>
+          <input
+            type="search"
+            id="cari_layanan"
+            name="q"
+            placeholder="Cari nama atau kode layanan">
+          &nbsp;
+          <label for="kategori">Kategori:</label>
+          <select id="kategori" name="kategori">
+            <option>Semua kategori</option>
+            <option>Laptop / Notebook</option>
+            <option>Hardware</option>
+            <option>Software</option>
+            <option>Penyimpanan</option>
+          </select>
+          &nbsp;
+          <button type="submit">Filter</button>
+        </form>
+
+        <br>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Layanan</th>
+              <th>Kategori</th>
+              <th>Harga Dasar</th>
+              <th>Estimasi</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cleaning &amp; Thermal Paste</td>
+              <td>Laptop / Notebook</td>
+              <td>Rp150.000</td>
+              <td>1&ndash;2 hari</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-layanan.html">Lihat</a> |
+                <a href="edit-layanan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Deep Cleaning &amp; Re-paste Arctic MX-4</td>
+              <td>Laptop / Notebook</td>
+              <td>Rp250.000</td>
+              <td>1&ndash;2 hari</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-layanan.html">Lihat</a> |
+                <a href="edit-layanan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Instalasi Windows 11 &amp; Driver</td>
+              <td>Software</td>
+              <td>Rp120.000</td>
+              <td>1 hari</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-layanan.html">Lihat</a> |
+                <a href="edit-layanan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Perbaikan Keyboard &amp; Trackpad</td>
+              <td>Hardware</td>
+              <td>Mulai Rp850.000</td>
+              <td>2&ndash;3 hari</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-layanan.html">Lihat</a> |
+                <a href="edit-layanan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Penggantian Kipas Pendingin</td>
+              <td>Hardware</td>
+              <td>Mulai Rp690.000</td>
+              <td>2&ndash;3 hari</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-layanan.html">Lihat</a> |
+                <a href="edit-layanan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Pemulihan Data &amp; Penggantian SSD</td>
+              <td>Penyimpanan</td>
+              <td>Mulai Rp1.250.000</td>
+              <td>3&ndash;5 hari</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-layanan.html">Lihat</a> |
+                <a href="edit-layanan.html">Edit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <small>Menampilkan 6 dari 6 layanan &bull; Halaman 1 dari 1</small>
+        </p>
+
+        <p>
+          <em
+            >Transparansi biaya untuk pelanggan — Estimasi layanan dan sparepart
+            dikirim melalui portal. Perbaikan hanya dilanjutkan setelah
+            pelanggan menyetujui biaya.</em
+          >
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

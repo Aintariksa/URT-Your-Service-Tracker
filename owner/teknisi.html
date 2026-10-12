@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknisi — Portal Pemilik — Your Service Tracker</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        PEMILIK USAHA &bull; &#9679; Sistem Online &nbsp;&nbsp;&nbsp; &#128276;
+        &nbsp; AR
+      </p>
+    </header>
+
+    <hr>
+
+    <nav>
+      <ul>
+        <li><a href="beranda-owner.html">Beranda</a></li>
+        <li><a href="tiket-servis.html">Tiket Servis</a></li>
+        <li>
+          <strong><a href="teknisi.html">Teknisi</a></strong>
+        </li>
+        <li><a href="pelanggan.html">Pelanggan</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="langganan.html">Langganan</a></li>
+        <li><a href="pengaturan.html">Pengaturan</a></li>
+        <li><a href="profil-owner.html">Profil</a></li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+      <hr>
+      <p>Andi Ramadhan<br>Pemilik &bull; ServisKita</p>
+    </nav>
+
+    <hr>
+
+    <main>
+      <p>PORTAL PEMILIK</p>
+      <h1>Teknisi</h1>
+      <p>
+        Kelola tim teknisi, spesialisasi, akses akun, dan beban pekerjaan di
+        ServisKita. &nbsp;&nbsp;
+        <a href="edit-teknisi.html">+ Tambah Teknisi</a>
+      </p>
+
+      <section>
+        <h2>Ringkasan Tim</h2>
+
+        <table>
+          <tr>
+            <th>Teknisi Aktif</th>
+            <th>Tiket Aktif</th>
+            <th>SLA Terpenuhi</th>
+          </tr>
+          <tr>
+            <td><strong>8</strong><br><small>2 sedang bertugas</small></td>
+            <td>
+              <strong>28</strong><br><small
+                >Terdistribusi ke seluruh tim</small
+              >
+            </td>
+            <td>
+              <strong>87%</strong><br><small>Tiket selesai tepat waktu</small>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Daftar Teknisi</h2>
+        <p>8 teknisi terdaftar &bull; Informasi beban kerja terkini</p>
+
+        <form method="get" action="teknisi.html">
+          <label for="cari_teknisi">Cari:</label>
+          <input
+            type="search"
+            id="cari_teknisi"
+            name="q"
+            placeholder="Cari nama atau nama pengguna teknisi">
+          &nbsp;
+          <label for="spesialisasi">Spesialisasi:</label>
+          <select id="spesialisasi" name="spesialisasi">
+            <option>Semua spesialisasi</option>
+            <option>Laptop</option>
+            <option>Hardware</option>
+            <option>Software</option>
+            <option>QC</option>
+          </select>
+          &nbsp;
+          <button type="submit">Filter</button>
+        </form>
+
+        <br>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Nama Teknisi</th>
+              <th>Nama Pengguna</th>
+              <th>Spesialisasi</th>
+              <th>Beban Kerja</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sofia Malvalena Adam</td>
+              <td>sofia.adam</td>
+              <td>Laptop &bull; Hardware</td>
+              <td>5 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Ardi Pratama</td>
+              <td>ardi.pratama</td>
+              <td>Laptop &bull; Diagnosis</td>
+              <td>4 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dimas Saputra</td>
+              <td>dimas.saputra</td>
+              <td>Software &bull; OS</td>
+              <td>3 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Rani Oktaviani</td>
+              <td>rani.oktaviani</td>
+              <td>Laptop &bull; QC</td>
+              <td>4 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Fajar Nugroho</td>
+              <td>fajar.nugroho</td>
+              <td>Hardware &bull; Pendingin</td>
+              <td>3 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Bayu Setiawan</td>
+              <td>bayu.setiawan</td>
+              <td>Laptop &bull; Hardware</td>
+              <td>4 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Intan Permata</td>
+              <td>intan.permata</td>
+              <td>Software &bull; Data</td>
+              <td>2 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Rizal Hidayat</td>
+              <td>rizal.hidayat</td>
+              <td>Laptop &bull; QC</td>
+              <td>3 tiket</td>
+              <td>[AKTIF]</td>
+              <td>
+                <a href="detail-teknisi.html">Lihat</a> |
+                <a href="edit-teknisi.html">Edit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <small>Menampilkan 8 dari 8 teknisi &bull; Halaman 1 dari 1</small>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimasi Biaya & Mutu - URT</title>
+  </head>
+  <body>
+    <header>
+      <a href="beranda-teknisi.html">URT Your Service Tracker</a>
+      <p>PORTAL TEKNISI</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="beranda-teknisi.html">Beranda</a></li>
+          <li><a href="riwayat.html">Riwayat Tiket</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="judul-estimasi">
+        <h1 id="judul-estimasi">Estimasi Biaya &amp; Mutu</h1>
+        <p>
+          Isi estimasi biaya servis dan perkiraan selesainya pemeriksaan mutu
+          sebelum tiket dikirim ke pelanggan.
+        </p>
+
+        <article>
+          <h2>Tiket Aktif #URT-2026-001</h2>
+          <p>Status: <strong>Menunggu Persetujuan</strong></p>
+
+          <section aria-labelledby="data">
+            <h3 id="data">Data Pelanggan &amp; Perangkat</h3>
+            <dl>
+              <dt>Nama Pelanggan</dt>
+              <dd>Nino Rachimas</dd>
+              <dt>Nomor HP</dt>
+              <dd>0812 3456 7890</dd>
+              <dt>Perangkat</dt>
+              <dd>ASUS VivoBook 14</dd>
+              <dt>Keluhan</dt>
+              <dd>Laptop mati tiba-tiba dan terasa panas.</dd>
+            </dl>
+          </section>
+
+          <form action="ringkasan-terkirim.html" method="get">
+            <fieldset>
+              <legend>Diagnosa &amp; Estimasi</legend>
+              <p>
+                <label for="diagnosa">Kerusakan / Diagnosa</label><br>
+                <textarea
+                  id="diagnosa"
+                  name="diagnosa"
+                  rows="4"
+                  cols="60"
+                  required
+                >
+Debu menumpuk pada kipas dan pendingin. Pasta termal menurun kualitasnya.</textarea
+                >
+              </p>
+              <p>
+                <label for="suku-cadang">Suku Cadang yang Dibutuhkan</label
+                ><br>
+                <input
+                  type="text"
+                  id="suku-cadang"
+                  name="suku-cadang"
+                  value="Pasta termal">
+              </p>
+              <p>
+                <label for="qc">Pemeriksaan Mutu Selesai</label><br>
+                <input type="date" id="qc" name="qc" value="2026-09-02">
+              </p>
+              <p>
+                <label for="estimasi">Estimasi Servis Selesai</label><br>
+                <input
+                  type="date"
+                  id="estimasi"
+                  name="estimasi"
+                  value="2026-09-03">
+              </p>
+              <button type="submit">Simpan Estimasi</button>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="beranda-teknisi.html">Kembali ke Beranda</a></p>
+    </footer>
+  </body>
+</html>

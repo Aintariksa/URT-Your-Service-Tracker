@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Tambah / Edit Pelanggan — Portal Pemilik — Your Service Tracker
+    </title>
+  </head>
+  <body>
+    <header>
+      <p>
+        PEMILIK USAHA &bull; &#9679; Sistem Online &nbsp;&nbsp;&nbsp; &#128276;
+        &nbsp; AR
+      </p>
+    </header>
+
+    <hr>
+
+    <nav>
+      <ul>
+        <li><a href="beranda-owner.html">Beranda</a></li>
+        <li><a href="tiket-servis.html">Tiket Servis</a></li>
+        <li><a href="teknisi.html">Teknisi</a></li>
+        <li>
+          <strong><a href="pelanggan.html">Pelanggan</a></strong>
+        </li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="langganan.html">Langganan</a></li>
+        <li><a href="pengaturan.html">Pengaturan</a></li>
+        <li><a href="profil-owner.html">Profil</a></li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+      <hr>
+      <p>Andi Ramadhan<br>Pemilik &bull; ServisKita</p>
+    </nav>
+
+    <hr>
+
+    <main>
+      <p>PORTAL PEMILIK</p>
+      <h1>Tambah / Edit Pelanggan</h1>
+      <p>
+        Lengkapi identitas dan kontak pelanggan untuk tanda terima dan pembaruan
+        servis.
+      </p>
+      <p><a href="pelanggan.html">&larr; Kembali ke Pelanggan</a></p>
+
+      <p>
+        <a href="edit-pelanggan.html">[Tambah Baru]</a> &nbsp;
+        <strong>[Edit Pelanggan]</strong> &nbsp;
+        <em>Mode edit &bull; Nadia Putri</em>
+      </p>
+
+      <form action="pelanggan.html" method="get">
+        <fieldset>
+          <legend>Identitas &amp; Kontak</legend>
+
+          <p>
+            <label for="nama_lengkap">Nama Lengkap *</label><br>
+            <input
+              type="text"
+              id="nama_lengkap"
+              name="nama_lengkap"
+              value="Nadia Putri"
+              required>
+          </p>
+
+          <p>
+            <label for="email_aktif">Email Aktif *</label><br>
+            <input
+              type="email"
+              id="email_aktif"
+              name="email"
+              value="nadia.putri@email.com"
+              required>
+            <br><small>Estimasi dan invoice dikirim ke alamat ini.</small>
+          </p>
+
+          <p>
+            <label for="nomor_wa">Nomor WhatsApp / Telepon *</label><br>
+            <input
+              type="tel"
+              id="nomor_wa"
+              name="telepon"
+              value="0813 2211 9087"
+              required>
+          </p>
+
+          <p>
+            <label for="alamat">Alamat Lengkap</label><br>
+            <textarea id="alamat" name="alamat" rows="3" cols="40">
+Jl. Anggrek No. 12, Jakarta Barat, DKI Jakarta</textarea
+            >
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferensi &amp; Catatan</legend>
+
+          <p>
+            <label for="status_pelanggan">Status Pelanggan</label><br>
+            <select id="status_pelanggan" name="status">
+              <option selected>Aktif</option>
+              <option>Tidak aktif</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="notifikasi">Saluran Notifikasi</label><br>
+            <select id="notifikasi" name="notifikasi">
+              <option selected>WhatsApp dan Email</option>
+              <option>WhatsApp saja</option>
+              <option>Email saja</option>
+              <option>Tidak ada</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="catatan">Catatan Internal</label><br>
+            <textarea
+              id="catatan"
+              name="catatan"
+              rows="4"
+              cols="40"
+              placeholder="Catatan hanya terlihat oleh tim ServisKita."
+            >
+Pelanggan MacBook Air M2. Hubungi sebelum penggantian komponen.</textarea
+            >
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="izin_notif" value="ya" checked>
+              Izinkan notifikasi status servis — Pelanggan menerima estimasi,
+              persetujuan, dan tanda terima digital.
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <a href="pelanggan.html">Batal</a>
+          &nbsp;
+          <button type="reset">Reset Form</button>
+          &nbsp;
+          <button type="submit">Simpan Pelanggan</button>
+        </p>
+      </form>
+
+      <hr>
+
+      <p>
+        <small
+          ><em
+            >Data kontak valid — Format email dan nomor WhatsApp telah sesuai.
+            Mengubah profil tidak mengubah tiket #URT-2026-0142 atau riwayat
+            servis pelanggan.</em
+          ></small
+        >
+      </p>
+    </main>
+  </body>
+</html>

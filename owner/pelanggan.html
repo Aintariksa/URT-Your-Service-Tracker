@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelanggan — Portal Pemilik — Your Service Tracker</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        PEMILIK USAHA &bull; &#9679; Sistem Online &nbsp;&nbsp;&nbsp; &#128276;
+        &nbsp; AR
+      </p>
+    </header>
+
+    <hr>
+
+    <nav>
+      <ul>
+        <li><a href="beranda-owner.html">Beranda</a></li>
+        <li><a href="tiket-servis.html">Tiket Servis</a></li>
+        <li><a href="teknisi.html">Teknisi</a></li>
+        <li>
+          <strong><a href="pelanggan.html">Pelanggan</a></strong>
+        </li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="langganan.html">Langganan</a></li>
+        <li><a href="pengaturan.html">Pengaturan</a></li>
+        <li><a href="profil-owner.html">Profil</a></li>
+        <li><a href="../index.html">Keluar</a></li>
+      </ul>
+      <hr>
+      <p>Andi Ramadhan<br>Pemilik &bull; ServisKita</p>
+    </nav>
+
+    <hr>
+
+    <main>
+      <p>PORTAL PEMILIK</p>
+      <h1>Pelanggan</h1>
+      <p>
+        Data pelanggan dan riwayat perangkat yang diservis di ServisKita.
+        &nbsp;&nbsp; <a href="edit-pelanggan.html">+ Tambah Pelanggan</a>
+      </p>
+
+      <section>
+        <h2>Ringkasan Pelanggan</h2>
+
+        <table>
+          <tr>
+            <th>Pelanggan</th>
+            <th>Pelanggan dengan tiket aktif</th>
+            <th>Pelanggan baru bulan ini</th>
+          </tr>
+          <tr>
+            <td><strong>186</strong><br><small>+12 bulan ini</small></td>
+            <td>
+              <strong>28</strong><br><small>Pantau proses servis</small>
+            </td>
+            <td>
+              <strong>12</strong><br><small
+                >Terdaftar melalui portal dan frontdesk</small
+              >
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Daftar Pelanggan</h2>
+        <p>Identitas dan kontak untuk pembaruan status servis</p>
+
+        <form method="get" action="pelanggan.html">
+          <label for="cari_pelanggan">Cari:</label>
+          <input
+            type="search"
+            id="cari_pelanggan"
+            name="q"
+            placeholder="Cari nama, email, atau nomor HP pelanggan">
+          &nbsp;
+          <label for="status_pelanggan">Status:</label>
+          <select id="status_pelanggan" name="status">
+            <option>Semua status</option>
+            <option>Aktif</option>
+            <option>Tidak aktif</option>
+          </select>
+          &nbsp;
+          <button type="submit">Filter</button>
+        </form>
+
+        <br>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Pelanggan</th>
+              <th>Email</th>
+              <th>Nomor HP</th>
+              <th>Tiket</th>
+              <th>Terdaftar</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nadia Putri</td>
+              <td>nadia.putri@email.com</td>
+              <td>0813 2211 9087</td>
+              <td>1 aktif</td>
+              <td>24 Agu 2026</td>
+              <td>
+                <a href="detail-pelanggan.html">Lihat</a> |
+                <a href="edit-pelanggan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Rizky Fauzan</td>
+              <td>rizky.fauzan@email.com</td>
+              <td>0812 9988 1102</td>
+              <td>1 aktif</td>
+              <td>24 Agu 2026</td>
+              <td>
+                <a href="detail-pelanggan.html">Lihat</a> |
+                <a href="edit-pelanggan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dewi Lestari</td>
+              <td>dewi.lestari@email.com</td>
+              <td>0857 2211 3478</td>
+              <td>1 selesai</td>
+              <td>23 Agu 2026</td>
+              <td>
+                <a href="detail-pelanggan.html">Lihat</a> |
+                <a href="edit-pelanggan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Nino Rachimas</td>
+              <td>nino.rachimas@email.com</td>
+              <td>0812 3456 7890</td>
+              <td>1 aktif</td>
+              <td>24 Agu 2026</td>
+              <td>
+                <a href="detail-pelanggan.html">Lihat</a> |
+                <a href="edit-pelanggan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Aulia Rahman</td>
+              <td>aulia.rahman@email.com</td>
+              <td>0813 4499 6721</td>
+              <td>1 selesai</td>
+              <td>18 Agu 2026</td>
+              <td>
+                <a href="detail-pelanggan.html">Lihat</a> |
+                <a href="edit-pelanggan.html">Edit</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Maya Putri</td>
+              <td>maya.putri@email.com</td>
+              <td>0856 8877 1302</td>
+              <td>1 selesai</td>
+              <td>7 Agu 2026</td>
+              <td>
+                <a href="detail-pelanggan.html">Lihat</a> |
+                <a href="edit-pelanggan.html">Edit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><small>Menampilkan 6 dari 186 pelanggan &bull; Halaman 1</small></p>
+
+        <p><button type="button">Import &amp; Panduan SOP</button></p>
+      </section>
+    </main>
+  </body>
+</html>

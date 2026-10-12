@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Teknisi - URT</title>
+  </head>
+  <body>
+    <header>
+      <a href="beranda-teknisi.html">URT Your Service Tracker</a>
+      <p>PORTAL TEKNISI</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="beranda-teknisi.html">Beranda</a></li>
+          <li><a href="riwayat.html">Riwayat Tiket</a></li>
+          <li><a href="profil.html" aria-current="page">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="judul-profil">
+        <h1 id="judul-profil">Profil Teknisi</h1>
+        <p>
+          Kelola identitas, akses, dan informasi kerja teknisi untuk operasional
+          servis.
+        </p>
+
+        <article>
+          <header>
+            <h2>Sofia Malvalena Adam</h2>
+            <p>Status akses: <strong>Aktif</strong></p>
+          </header>
+
+          <form action="profil.html" method="get">
+            <fieldset>
+              <legend>Informasi Pribadi</legend>
+
+              <p>
+                <label for="nama">Nama Lengkap</label><br>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  value="Sofia Malvalena Adam"
+                  required>
+              </p>
+
+              <p>
+                <label for="username">Nama Pengguna</label><br>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  value="sofia.adam"
+                  required>
+              </p>
+
+              <p>
+                <label for="email">Surel</label><br>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="sofia.adam@yourservicetracker.id"
+                  required>
+              </p>
+
+              <p>
+                <label for="telepon">Nomor HP</label><br>
+                <input
+                  type="tel"
+                  id="telepon"
+                  name="telepon"
+                  value="0812 3456 7890">
+              </p>
+
+              <p>
+                <label for="alamat">Alamat</label><br>
+                <textarea id="alamat" name="alamat" rows="4" cols="60">
+Jl. Raya Kebon Jeruk No. 18, Jakarta Barat, DKI Jakarta 11530</textarea
+                >
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Detail Kerja &amp; Keamanan</legend>
+
+              <p>
+                <label for="jabatan">Jabatan</label><br>
+                <input
+                  type="text"
+                  id="jabatan"
+                  name="jabatan"
+                  value="Teknisi Servis Laptop"
+                  readonly>
+              </p>
+
+              <p>
+                <label for="departemen">Departemen</label><br>
+                <input
+                  type="text"
+                  id="departemen"
+                  name="departemen"
+                  value="Operasional Servis"
+                  readonly>
+              </p>
+
+              <p>
+                <label for="status">Status Akses</label><br>
+                <input
+                  type="text"
+                  id="status"
+                  name="status"
+                  value="Aktif"
+                  readonly>
+              </p>
+
+              <p>
+                Terakhir masuk: 24 Agu 2026, 09:12 WIB.<br>
+                Pembaruan kata sandi terakhir: 12 Agu 2026.
+              </p>
+            </fieldset>
+
+            <button type="submit">Simpan Perubahan</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>SMA Sofia Malvalena Adam - Teknisi</p>
+    </footer>
+  </body>
+</html>

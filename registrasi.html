@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrasi - URT Device Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>URT — Your Device Tracker</h1>
+      <hr>
+      <nav>
+        <a href="index.html">Kembali ke Beranda</a>
+        <a href="masuk.html">Sudah punya akun? Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="register">
+        <h2>Buat Akun Baru</h2>
+        <form action="pendaftaran-servis.html">
+          <p>
+            <label
+              >Daftar sebagai:
+              <select id="registerRole">
+                <option value="pelanggan">Pelanggan</option>
+                <option value="teknisi">Teknisi</option>
+                <option value="owner">Owner</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>Nama lengkap: <input type="text" required></label>
+          </p>
+          <p>
+            <label>Email: <input type="email" required></label>
+          </p>
+          <p>
+            <label>No. WhatsApp: <input type="tel" required></label>
+          </p>
+          <p>
+            <label>Password: <input type="password" required></label>
+          </p>
+          <p>
+            <button type="submit">Pendaftaran Perangkat</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Tiket - URT-2026-001</title>
+  </head>
+  <body>
+    <header>
+      <a href="beranda-teknisi.html">URT Your Service Tracker</a>
+      <p>PORTAL TEKNISI</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="beranda-teknisi.html">Beranda</a></li>
+          <li><a href="riwayat.html">Riwayat Tiket</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header>
+          <h1>Detail Tiket #URT-2026-001</h1>
+          <p>Status: <strong>Menunggu Persetujuan</strong></p>
+        </header>
+
+        <section aria-labelledby="data-customer">
+          <h2 id="data-customer">Data Customer &amp; Perangkat</h2>
+          <dl>
+            <dt>Nama Customer</dt>
+            <dd>Nino Rachimas</dd>
+            <dt>Nomor HP</dt>
+            <dd>0812 3456 7890</dd>
+            <dt>Perangkat</dt>
+            <dd>ASUS VivoBook 14</dd>
+            <dt>Keluhan Kerusakan</dt>
+            <dd>Laptop mati tiba-tiba dan terasa panas.</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="diagnosis">
+          <h2 id="diagnosis">Diagnosa</h2>
+          <form action="estimasi.html" method="get">
+            <fieldset>
+              <legend>Diagnosis dan Estimasi</legend>
+
+              <p>
+                <label for="kerusakan">Kerusakan / Diagnosa</label><br>
+                <textarea
+                  id="kerusakan"
+                  name="kerusakan"
+                  rows="5"
+                  cols="50"
+                  required
+                >
+Debu menumpuk pada fan dan heatsink. Thermal paste menurun kualitasnya.</textarea
+                >
+              </p>
+
+              <p>
+                <label for="sparepart">Sparepart yang Dibutuhkan</label><br>
+                <input
+                  type="text"
+                  id="sparepart"
+                  name="sparepart"
+                  value="Thermal paste">
+              </p>
+
+              <p>
+                <label for="biaya">Estimasi Biaya (Rp)</label><br>
+                <input
+                  type="number"
+                  id="biaya"
+                  name="biaya"
+                  value="250000"
+                  min="0"
+                  required>
+              </p>
+
+              <p>
+                <label for="selesai">Estimasi Selesai</label><br>
+                <input
+                  type="date"
+                  id="selesai"
+                  name="selesai"
+                  value="2026-09-03"
+                  required>
+              </p>
+
+              <button type="submit">Simpan Diagnosa</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <section aria-labelledby="pesan-pelanggan">
+          <h2 id="pesan-pelanggan">Pesan ke Pelanggan</h2>
+          <form action="ringkasan-terkirim.html" method="get">
+            <fieldset>
+              <legend>Review sebelum dikirim</legend>
+              <label for="pesan">Pesan ke Pelanggan</label><br>
+              <textarea id="pesan" name="pesan" rows="7" cols="70">
+Halo Nino Rachimas, diagnosis ASUS VivoBook 14 telah selesai. Ditemukan debu pada fan dan heatsink serta penurunan kualitas thermal paste. Estimasi servis Rp250.000, selesai 3 Sep 2026. Silakan konfirmasi persetujuan biaya melalui portal pelanggan.</textarea
+              >
+              <p><button type="submit">Kirim Pesan</button></p>
+            </fieldset>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p><a href="beranda-teknisi.html">Kembali ke Beranda</a></p>
+    </footer>
+  </body>
+</html>
